@@ -1,0 +1,117 @@
+uuid: d1d0251c-06c1-45b9-b85b-6506b823ed32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.visal.field_domain
+    - field.field.node.visal.field_name
+    - field.field.node.visal.field_reference
+    - node.type.visal
+  module:
+    - layout_builder
+    - layout_discovery
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          8ce54e6d-7c8b-4117-acf2-2680a2b9f2bd:
+            uuid: 8ce54e6d-7c8b-4117-acf2-2680a2b9f2bd
+            region: content
+            configuration:
+              id: 'extra_field_block:node:visal:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          fafb5f48-0d44-4a4b-a2db-b73e126c1121:
+            uuid: fafb5f48-0d44-4a4b-a2db-b73e126c1121
+            region: content
+            configuration:
+              id: 'field_block:node:visal:field_name'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          386521e9-738a-4f5d-aa55-71f01c3ebfba:
+            uuid: 386521e9-738a-4f5d-aa55-71f01c3ebfba
+            region: content
+            configuration:
+              id: 'field_block:node:visal:field_domain'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          d5a84902-b44c-4d48-aa96-e83b0b6e5f8c:
+            uuid: d5a84902-b44c-4d48-aa96-e83b0b6e5f8c
+            region: content
+            configuration:
+              id: 'field_block:node:visal:field_reference'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+        third_party_settings: {  }
+id: node.visal.default
+targetEntityType: node
+bundle: visal
+mode: default
+content:
+  field_domain:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_reference:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,22 @@
+uuid: b1c2222d-ed09-4bd9-814a-a0b3c8b14f73
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: kumaresh_auto_path
+label: 'Kumaresh Auto Path'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  ce701afd-bfba-4c94-b3bc-53df4ce85e3a:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: ce701afd-bfba-4c94-b3bc-53df4ce85e3a
+    context_mapping:
+      node: node
+    bundles:
+      kumaresh: kumaresh
+selection_logic: and
+weight: -5
+relationships: {  }

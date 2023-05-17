@@ -1,0 +1,21 @@
+uuid: 23752926-f374-4455-84e9-b132f5078475
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text_formatted_long_
+    - node.type.all_text
+  module:
+    - text
+id: node.all_text.field_text_formatted_long_
+field_name: field_text_formatted_long_
+entity_type: node
+bundle: all_text
+label: 'Text (formatted, long)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

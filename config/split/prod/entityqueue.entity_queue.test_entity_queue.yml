@@ -1,0 +1,26 @@
+uuid: 16d91eed-4a6b-4088-9af3-4f75fbf48a75
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: test_entity_queue
+label: 'Test Entity Queue'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 0
+  max_size: 0
+  act_as_queue: false
+  reverse: false

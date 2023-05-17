@@ -1,0 +1,20 @@
+uuid: 8fb552e0-19d0-4167-8047-722f4ac3d902
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_text_fornatted_
+field_name: field_text_fornatted_
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

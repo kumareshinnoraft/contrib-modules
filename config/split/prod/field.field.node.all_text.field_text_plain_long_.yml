@@ -1,0 +1,19 @@
+uuid: 131120b4-7a45-4c92-9474-058987a15622
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text_plain_long_
+    - node.type.all_text
+id: node.all_text.field_text_plain_long_
+field_name: field_text_plain_long_
+entity_type: node
+bundle: all_text
+label: 'Text (plain, long)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

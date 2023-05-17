@@ -1,0 +1,64 @@
+# gitignore template for Drupal 8 projects
+#
+# earlier versions of Drupal are tracked in `community/PHP/`
+#
+# follows official upstream conventions:
+# https://www.drupal.org/docs/develop/using-composer
+
+# Ignore configuration files that may contain sensitive information
+/web/sites/*/*settings*.php
+/web/sites/*/*services*.yml
+
+# Ignore paths that may contain user-generated content
+/web/sites/*/files-private
+/web/sites/*/files-public
+/web/sites/*/private
+/web/sites/*/public
+/web/sites/*/files
+
+# Ignore paths that may contain temporary files
+/web/sites/*/translations
+/web/sites/*/cache
+/web/sites/*/tmp
+
+# Ignore drupal core (if not versioning drupal sources)
+/web/sites/example.settings.local.php
+/web/sites/development.services.yml
+/web/sites/example.sites.php
+/web/profiles/README.txt
+/web/modules/README.txt
+/web/themes/README.txt
+/web/sites/README.txt
+/web/example.gitignore
+/web/modules/contrib
+/web/themes/contrib
+/web/.ht.router.php
+/web/.eslintrc.json
+/web/.gitattributes
+/web/.eslintignore
+/web/.editorconfig
+/web/composer.json
+/web/composer.lock
+/web/autoload.php
+/web/LICENSE.txt
+/web/INSTALL.txt
+/web/.csslintrc
+/web/README.txt
+/web/robots.txt
+/web/update.php
+/web/web.config
+/web/libraries/
+/web/index.php
+/web/.htaccess
+/web/vendor
+/web/core
+# Ignore vendor dependencies and scripts
+/vendor
+/composer.phar
+/composer
+/robo.phar
+/robo
+/drush.phar
+/drush
+/drupal.phar
+/drupal
