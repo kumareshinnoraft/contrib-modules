@@ -1,0 +1,73 @@
+uuid: da5be46a-c147-49c4-8a73-05a8951cb6d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - entityqueue.entity_queue.test_entity_queue
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          22bab97e-22ff-4578-87b0-1990209e06f2:
+            uuid: 22bab97e-22ff-4578-87b0-1990209e06f2
+            region: content
+            configuration:
+              id: 'field_block:entity_subqueue:test_entity_queue:title'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          9410592e-1748-447e-9473-3e1931392239:
+            uuid: 9410592e-1748-447e-9473-3e1931392239
+            region: content
+            configuration:
+              id: 'field_block:entity_subqueue:test_entity_queue:items'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: hidden
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: entity_subqueue.test_entity_queue.default
+targetEntityType: entity_subqueue
+bundle: test_entity_queue
+mode: default
+content:
+  items:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -10
+    region: content
+hidden: {  }

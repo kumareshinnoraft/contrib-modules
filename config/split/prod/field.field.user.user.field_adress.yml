@@ -1,0 +1,25 @@
+uuid: 485d4a14-f623-4896-bccf-51f9079a5edf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_adress
+  module:
+    - address
+    - user
+id: user.user.field_adress
+field_name: field_adress
+entity_type: user
+bundle: user
+label: Address
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries: {  }
+  langcode_override: ''
+  field_overrides: {  }
+  fields: {  }
+field_type: address

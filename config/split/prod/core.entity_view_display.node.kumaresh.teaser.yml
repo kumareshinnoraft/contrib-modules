@@ -1,0 +1,30 @@
+uuid: 4d961706-5f03-441d-af97-82bec08cdef8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.kumaresh.body
+    - node.type.kumaresh
+  module:
+    - text
+    - user
+id: node.kumaresh.teaser
+targetEntityType: node
+bundle: kumaresh
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

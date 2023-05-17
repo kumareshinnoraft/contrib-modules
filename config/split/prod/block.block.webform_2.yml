@@ -1,0 +1,26 @@
+uuid: b7d7d163-fda1-41e1-bc39-58e63f72d532
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.example_options_custom
+  module:
+    - webform
+  theme:
+    - olivero
+id: webform_2
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: Webform
+  label_display: visible
+  provider: webform
+  webform_id: example_options_custom
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility: {  }

@@ -1,0 +1,32 @@
+uuid: bd251b00-15e3-41c7-94d6-20f4fb1ca790
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.all_text.field_list_text_
+    - field.field.node.all_text.field_text_formatted_long_
+    - field.field.node.all_text.field_text_formatted_long_with_s
+    - field.field.node.all_text.field_text_fornatted_
+    - field.field.node.all_text.field_text_plain_
+    - field.field.node.all_text.field_text_plain_long_
+    - node.type.all_text
+  module:
+    - user
+id: node.all_text.teaser
+targetEntityType: node
+bundle: all_text
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_list_text_: true
+  field_text_formatted_long_: true
+  field_text_formatted_long_with_s: true
+  field_text_fornatted_: true
+  field_text_plain_: true
+  field_text_plain_long_: true

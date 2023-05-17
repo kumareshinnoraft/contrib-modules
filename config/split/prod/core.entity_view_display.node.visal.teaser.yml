@@ -1,0 +1,26 @@
+uuid: 041d4bf5-0052-4b94-8a48-e8b45893f6fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.visal.field_domain
+    - field.field.node.visal.field_name
+    - field.field.node.visal.field_reference
+    - node.type.visal
+  module:
+    - user
+id: node.visal.teaser
+targetEntityType: node
+bundle: visal
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_domain: true
+  field_name: true
+  field_reference: true

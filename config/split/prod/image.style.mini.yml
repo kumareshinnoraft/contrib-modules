@@ -1,0 +1,14 @@
+uuid: 81942fd1-fbda-422d-ad4c-d8978e00f3a0
+langcode: en
+status: true
+dependencies: {  }
+name: mini
+label: 'mini (10x10)'
+effects:
+  0f92844c-8651-45c8-aa6e-72809bfafe89:
+    uuid: 0f92844c-8651-45c8-aa6e-72809bfafe89
+    id: image_resize
+    weight: 1
+    data:
+      width: 10
+      height: 10

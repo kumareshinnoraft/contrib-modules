@@ -1,0 +1,23 @@
+uuid: 2dd0117d-22d8-4878-abe2-33e7d419d0e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text_formatted_long_with_s
+    - node.type.all_text
+  module:
+    - text
+id: node.all_text.field_text_formatted_long_with_s
+field_name: field_text_formatted_long_with_s
+entity_type: node
+bundle: all_text
+label: 'Text (formatted, long, with summary)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

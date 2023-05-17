@@ -1,0 +1,27 @@
+uuid: c9da0dbc-134b-4b4a-8f9f-c98d05b00b57
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.test.field_image
+    - image.style.large
+    - paragraphs.paragraphs_type.test
+  module:
+    - image
+id: paragraph.test.default
+targetEntityType: paragraph
+bundle: test
+mode: default
+content:
+  field_image:
+    type: image
+    label: visually_hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
